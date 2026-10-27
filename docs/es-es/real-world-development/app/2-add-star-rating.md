@@ -47,7 +47,7 @@ La aplicación Copilot comienza por crear un árbol de trabajo nuevo, una copia 
 
 Todos los cambios generados por IA deben revisarse antes de combinarlos, incluso los más pequeños. Vamos a explorar los cambios directamente en la aplicación Copilot.
 
-1. En la esquina superior derecha de la aplicación, selecciona **Toggle review panel**. Se abrirá la pantalla de diferencias con todos los cambios pendientes realizados por Copilot.
+1. En la esquina superior derecha de la aplicación, selecciona **Toggle review panel**. En el panel que se abre, selecciona **Changes** para ver los archivos modificados y sus diferencias.
 
     ![Barra de herramientas superior de la aplicación GitHub Copilot con una flecha que señala el botón Toggle review panel situado a la derecha de Create PR](../../../_images/app-2-review-panel.png)
 
@@ -72,12 +72,12 @@ Todos los cambios generados por IA deben revisarse antes de combinarlos, incluso
 
 Revisa los resultados de las comprobaciones automatizadas del agente antes de abrir un navegador. Confirma que las pruebas cubren un `starRating` numérico y la alternativa para `null`. Un requisito previo ausente o una comprobación omitida no cuentan como superados; revisa cualquier solicitud de instalación antes de aprobarla.
 
-Por supuesto, no basta con leer el código y dar por hecho que funciona. Vamos a pedir a Copilot que abra el sitio web para examinar la interfaz actualizada. Para ello, le pediremos que inicie el sitio y lo abra en un lienzo de navegador.
+No basta con leer el código y dar por hecho que funciona. Pide a Copilot que inicie el sitio y lo abra en un lienzo de navegador para examinar la interfaz actualizada.
 
 > [!TIP]
 > Un lienzo es un widget interactivo disponible dentro de la aplicación Copilot. Más adelante explorarás algunos personalizados e incluso crearás uno, pero por ahora utilizaremos el lienzo de navegador integrado.
 
-1. Utiliza la siguiente indicación para pedir a Copilot que inicie la aplicación y abra la página en el lienzo de navegador:
+1. Utiliza la indicación siguiente para pedir a Copilot que inicie la aplicación y abra la página en el lienzo de navegador:
 
     ```plaintext
     Start the app and open it in the browser canvas.
@@ -95,10 +95,11 @@ Por supuesto, no basta con leer el código y dar por hecho que funciona. Vamos a
 
 1. Selecciona **Create PR** en la esquina superior derecha.
 2. Si se solicita, selecciona **Sign in with your browser** y sigue las indicaciones para autenticarte.
-3. Copilot comenzará a crear la PR.
-4. Selecciona la burbuja **PR** situada justo encima del chat para abrir la solicitud en el panel de revisión. Puedes revisarla aquí según sea necesario.
-5. Cuando esté lista, selecciona **Ready to merge**.
-6. Selecciona **Merge pull request** en el nuevo cuadro de diálogo para combinar la solicitud.
+3. Si Copilot indica que la política del repositorio exige una incidencia vinculada antes de crear la solicitud de incorporación de cambios, confirma que debe seguir ese proceso.
+4. Copilot empezará a crear la solicitud.
+5. Selecciona la burbuja **PR** situada justo encima del chat para abrir la solicitud en el panel de revisión y revisarla.
+6. Cuando esté lista, selecciona **Ready to merge**.
+7. Selecciona **Merge pull request** en el cuadro de diálogo para combinarla.
 
 ## Resumen y pasos siguientes
 
